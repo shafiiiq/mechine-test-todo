@@ -11,10 +11,12 @@ Before running the project, ensure you have the following installed:
 - **Node.js** (v16 or later)
 - **npm** (Node package manager)
 - **PostgreSQL** (for the database)
+- **React** (for frontend)
 
 You can download and install these dependencies from their official websites:
 - [Node.js](https://nodejs.org/)
 - [PostgreSQL](https://www.postgresql.org/)
+- [React](https://reactjs.org/)
 
 Additionally, if you don’t have **PostgreSQL** installed locally, you can set it up using a Docker container or any other method you prefer.
 
