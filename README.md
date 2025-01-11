@@ -1,6 +1,6 @@
-# **Project Name: TODO App Backend**
+# **Project Name: TODO App**
 
-This project contains the backend API for the TODO App, built using **Node.js**, **Express.js**, and a **PostgreSQL** database. The backend handles user and product-related operations, as well as basic reporting on top products and revenue.
+This project contains both the **backend** and **frontend** for the TODO App. The backend is built using **Node.js**, **Express.js**, and **PostgreSQL**, while the frontend is built using **React.js**.
 
 ---
 
@@ -40,9 +40,9 @@ Go into the project directory:
 cd todo-backend
 ```
 
-### **3. Install Dependencies**
+### **3. Install Backend Dependencies**
 
-Run the following command to install all the required dependencies:
+Run the following command to install all the required dependencies for the backend:
 
 ```bash
 npm install
@@ -69,7 +69,7 @@ Make sure to replace the placeholders with your actual PostgreSQL database detai
 
 ## **Running the Application**
 
-### **1. Start the Server**
+### **1. Start the Backend Server**
 
 After installing dependencies and setting up the environment, you can start the server with:
 
@@ -77,40 +77,33 @@ After installing dependencies and setting up the environment, you can start the 
 npm start
 ```
 
-By default, the server will run on `http://localhost:5000`.
+By default, the backend server will run on `http://localhost:5000`.
 
-### **2. Access the Endpoints**
+### **2. Navigate to the Frontend Directory**
 
-The following API endpoints are available:
+Open a new terminal window or tab, and navigate to the `todo-frontend` directory:
 
-- **GET /api/users-last-30-days**
-    - Fetches users who have made purchases in the last 30 days.
-
-- **GET /api/top-products**
-    - Fetches the top 3 products by purchase frequency.
-
-- **GET /api/revenue-per-category**
-    - Fetches revenue per product category.
-
-- **GET /api/remaining-stock/:productId**
-    - Fetches the remaining stock for a product by its ID.
-
----
-
-## **Project Structure**
-
-The project is organized as follows:
-
+```bash
+cd ../todo-frontend
 ```
-/todo-backend
-  ├── /node_modules        # Dependencies
-  ├── db.js                # Database connection and queries
-  ├── .env                 # Environment variables (ignore this file in Git)
-  ├── .gitignore           # Git ignore file
-  ├── server.js            # Main server file
-  ├── package.json         # Project metadata and dependencies
-  └── README.md            # Project documentation
+
+### **3. Install Frontend Dependencies**
+
+Run the following command to install all the required dependencies for the frontend:
+
+```bash
+npm install
 ```
+
+### **4. Start the Frontend React App**
+
+To run the frontend, use:
+
+```bash
+npm start
+```
+
+By default, the React frontend will run on `http://localhost:3000`.
 
 ---
 
@@ -177,6 +170,30 @@ The project is organized as follows:
     "remaining_stock": 50
   }
   ```
+
+---
+
+## **Project Structure**
+
+The project is organized as follows:
+
+```
+/todo-backend
+  ├── /node_modules        # Backend dependencies
+  ├── db.js                # Database connection and queries
+  ├── .env                 # Environment variables (ignore this file in Git)
+  ├── .gitignore           # Git ignore file
+  ├── server.js            # Main server file
+  ├── package.json         # Project metadata and backend dependencies
+  └── README.md            # Project documentation
+
+/todo-frontend
+  ├── /node_modules        # Frontend dependencies
+  ├── /public              # Public files (index.html, etc.)
+  ├── /src                 # React components and app logic
+  ├── package.json         # Project metadata and frontend dependencies
+  └── README.md            # Frontend-specific documentation
+```
 
 ---
 
