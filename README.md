@@ -188,9 +188,3 @@ The project is organized as follows:
 ## **Contribution**
 
 Feel free to fork the repository and submit a pull request if you'd like to contribute. Ensure that your contributions are well-documented and tested.
-
----
-
-## **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
